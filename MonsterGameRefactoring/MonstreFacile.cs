@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonsterGameRefactoring
 {
-    public class MonstreFacile
+    public class MonstreFacile : Personnage
     {
         private const int degats = 10;
         public bool EstVivant { get; private set; }

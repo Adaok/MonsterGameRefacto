@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonsterGameRefactoring
 {
-    public class BossDeFin
+    public class BossDeFin : PersonnageAPointsDeVie
     {
         public int PtsDeVies { get; private set; }
         public bool EstVivant
