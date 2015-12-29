@@ -17,7 +17,8 @@ namespace MonsterGameRefactoring
         
         public int LanceLeDe(int valeur)
         {
-            return De.LanceLeDe(valeur);
+            Random random = new Random();
+            return random.Next(1, valeur);
         }
 
     }

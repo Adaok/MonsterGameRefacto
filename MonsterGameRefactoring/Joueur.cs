@@ -36,7 +36,7 @@ namespace MonsterGameRefactoring
 
         private bool BouclierFonctionne()
         {
-            return De.LanceLeDe() <= 2;
+            return LanceLeDe() <= 2;
         }
     }
 }

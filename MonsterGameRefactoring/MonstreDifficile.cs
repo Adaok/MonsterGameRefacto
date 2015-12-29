@@ -18,7 +18,7 @@ namespace MonsterGameRefactoring
 
         private int SortMagique()
         {
-            int valeur = De.LanceLeDe();
+            int valeur = LanceLeDe();
             if (valeur == 6)
                 return 0;
             return degatsSort * valeur;
