@@ -9,7 +9,7 @@ namespace MonsterGameRefactoring
     public class MonstreFacile : Personnage
     {
         private const int degats = 10;
-        public bool EstVivant { get; private set; }
+        new public bool EstVivant { get; protected set; }
 
         public MonstreFacile()
         {
@@ -29,9 +29,5 @@ namespace MonsterGameRefactoring
             EstVivant = false;
         }
 
-        public int LanceLeDe()
-        {
-            return De.LanceLeDe();
-        }
     }
 }
