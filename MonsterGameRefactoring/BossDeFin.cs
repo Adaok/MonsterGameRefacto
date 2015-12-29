@@ -8,12 +8,7 @@ namespace MonsterGameRefactoring
 {
     public class BossDeFin : PersonnageAPointsDeVie
     {
-        public int PtsDeVies { get; private set; }
-        public bool EstVivant
-        {
-            get { return PtsDeVies > 0; }
-        }
-
+        
         public BossDeFin(int points)
         {
             PtsDeVies = points;
@@ -25,14 +20,9 @@ namespace MonsterGameRefactoring
             personnage.SubitDegats(nbPoints);
         }
 
-        public void SubitDegats(int valeur)
+        public override void SubitDegats(int valeur)
         {
             PtsDeVies -= valeur;
-        }
-
-        private int LanceLeDe(int valeur)
-        {
-            return De.LanceLeDe(valeur);
         }
     }
 }
