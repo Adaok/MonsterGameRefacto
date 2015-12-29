@@ -8,5 +8,17 @@ namespace MonsterGameRefactoring
 {
     public class PersonnageAPointsDeVie : Personnage
     {
+        public override bool EstVivant
+        {
+            get { return PtsDeVies > 0; }
+        }
+
+        public int PtsDeVies { get; protected set; }
+        
+        public int LanceLeDe(int valeur)
+        {
+            return De.LanceLeDe(valeur);
+        }
+
     }
 }
